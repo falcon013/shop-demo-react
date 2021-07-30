@@ -32,15 +32,16 @@ const ProductForm = (props) => {
 
     const saveProducts = (e) => {
         e.preventDefault()
-        props.addProduct({
+        const product = {
             name: name,
             price: price,
             image: image,
             description: description,
             rating: rating,
             gender: gender
-        })
-        console.log(props)
+        }
+        props.addProduct(product)
+        console.log(product)
     }
     return (
         <div className="create-product-form">
