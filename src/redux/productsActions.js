@@ -28,10 +28,10 @@ export const getProductAction = (id) => {
 export const addProductAction = (product) => {
     return async function (dispatch) {
         const response = await axios
-            .get(`${API_BASE}/products/create`)
+            .post(`${API_BASE}/products/create`,product)
         return dispatch({
             type: ADD_PRODUCT,
-            payload: response.data.data
+            payload: product
         })
     }
 }

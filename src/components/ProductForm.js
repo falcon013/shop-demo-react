@@ -5,10 +5,10 @@ import {connect} from "react-redux";
 const ProductForm = (props) => {
     // const [id, setId] = useState(null)
     const [name, setName] = useState('')
-    const [price, setPrice] = useState('')
+    const [price, setPrice] = useState(0)
     const [image, setImage] = useState('')
     const [description, setDescription] = useState('')
-    const [rating, setRating] = useState('')
+    const [rating, setRating] = useState(0)
     const [gender, setGender] = useState('')
 
     const onChangeName = e => {
@@ -40,6 +40,7 @@ const ProductForm = (props) => {
             rating: rating,
             gender: gender
         })
+        console.log(props)
     }
     return (
         <div className="create-product-form">
