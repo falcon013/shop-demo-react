@@ -1,38 +1,135 @@
-.App {
-  text-align: center;
+/*login*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+.loginPage {
+    width: 600px;
+    padding: 3% 0 0;
+    margin: auto;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.logo {
+    display: flex;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    color: #db598b;
+    padding-top: 10px;
+    padding-left: 10px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.loginForm {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.loginForm input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
 }
-
-.App-link {
-  color: #61dafb;
+.loginForm button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.loginForm button:hover,.loginForm button:active,.loginForm button:focus {
+    background: #43A047;
+}
+.logo img {
+     height: 50px;
+     width: 50px;
+     display: block;
+     margin-bottom: 60px;
+}
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    justify-content: space-evenly;
+    align-items: stretch;
+}
+.product-entity {
+    flex: 1 1 auto;
+    box-sizing: border-box;
+    /*box-shadow: 5px 5px 5px #ccc;*/
+    color: #171e42;
+    width: 340px;
+    height: 400px;
+    font-family: "Roboto", sans-serif;
+}
+.product-entity img {
+    width: 100%;
+    height: auto;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+.buttons button {
+    font-family: "Roboto", sans-serif;
+    padding: 7px;
+    margin: 4px;
+}
+a {
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: #db598b;
+}
+.add-product button {
+    margin: 20px;
+    font-family: "Roboto", sans-serif;
+    padding: 7px;
+}
+.create-product-form {
+    position: relative;
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24)
+}
+.create-product-form input {
+    font-family: "Roboto", sans-serif;
+    outline: 0;
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.create-product-form button {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #4CAF50;
+    width: 100%;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
 }
